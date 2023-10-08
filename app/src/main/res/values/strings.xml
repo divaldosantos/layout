@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PraktikKotlin</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="prog_name_java">Java</string>
+    <string name="prog_name_cpp">C++</string>
+    <string name="prog_name_kotlin">Kotlin</string>
+    <string name="image_view_item_transform_content_description">Represents an image view in the
+        item
+    </string>
+</resources>
