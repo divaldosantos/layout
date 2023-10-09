@@ -31,19 +31,6 @@ class SkillFragment : Fragment(){
     private var langList = ArrayList<SkillData>()
     private lateinit var adapter: SkillAdapter
 
-//    private val skillName = arrayOf(
-//        "Bahasa pemrograman C++",
-//        "Bahasa pemrograman Java",
-//        "Bahasa pemrograman Kotlin",
-//        "Bahasa pemrograman PHP",
-//        "Bahasa pemrograman Python",
-//        "Desain menggunakan CorelDRAW",
-//        "Bahasa pemrograman Java",
-//        "Bahasa pemrograman Kotlin",
-//        "Bahasa pemrograman PHP",
-//        "Bahasa pemrograman Python",
-//    )
-
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -130,24 +117,10 @@ class SkillFragment : Fragment(){
                 oldItem == newItem
         })  {
 
-//        private val drawables = listOf(
-//            R.drawable.logo_cpp_48dp,
-//            R.drawable.logo_java_48dp,
-//            R.drawable.logo_kotlin_48dp,
-//            R.drawable.logo_php_48dp,
-//            R.drawable.logo_python_48dp,
-//            R.drawable.logo_corel_48dp,
-//            R.drawable.logo_java_48dp,
-//            R.drawable.logo_kotlin_48dp,
-//            R.drawable.logo_php_48dp,
-//            R.drawable.logo_python_48dp,
-//        )
         fun setFilteredList(langlist: List<SkillData>) {
             this.langlist = langlist
             notifyDataSetChanged()
-
-
-}
+        }
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SkillViewHolder {
             val binding = FragmentSkillItemBinding.inflate(LayoutInflater.from(parent.context))
             return SkillViewHolder(binding)
@@ -160,6 +133,9 @@ class SkillFragment : Fragment(){
             holder.root.setOnClickListener { _->
                 listener(langlist[position].title)
             }
+        }
+        override fun getItemCount(): Int {
+            return langlist.size
         }
     }
 
