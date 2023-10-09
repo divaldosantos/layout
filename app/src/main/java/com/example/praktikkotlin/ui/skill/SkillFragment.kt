@@ -25,8 +25,6 @@ class SkillFragment : Fragment(){
 
     private var _binding: FragmentSkillBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
     private var langList = ArrayList<SkillData>()
     private lateinit var adapter: SkillAdapter
