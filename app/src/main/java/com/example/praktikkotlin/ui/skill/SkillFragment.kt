@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.content.res.ResourcesCompat
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
@@ -66,6 +65,7 @@ class SkillFragment : Fragment(){
 
 
     private fun addDataToList() {
+        langList.clear()
         langList.add(SkillData("Java", R.drawable.logo_java_48dp))
         langList.add(SkillData("Python", R.drawable.logo_python_48dp))
         langList.add(SkillData("C++", R.drawable.logo_cpp_48dp))
