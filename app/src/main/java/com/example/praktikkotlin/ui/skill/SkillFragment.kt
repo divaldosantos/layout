@@ -1,5 +1,6 @@
 package com.example.praktikkotlin.ui.skill
 
+
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -66,11 +67,6 @@ class SkillFragment : Fragment(){
 
     private fun addDataToList() {
         langList.clear()
-        langList.add(SkillData("Java", R.drawable.logo_java_48dp))
-        langList.add(SkillData("Python", R.drawable.logo_python_48dp))
-        langList.add(SkillData("C++", R.drawable.logo_cpp_48dp))
-        langList.add(SkillData("Kotlin", R.drawable.logo_kotlin_48dp))
-        langList.add(SkillData("PHP", R.drawable.logo_php_48dp))
         langList.add(SkillData("Java", R.drawable.logo_java_48dp))
         langList.add(SkillData("Python", R.drawable.logo_python_48dp))
         langList.add(SkillData("C++", R.drawable.logo_cpp_48dp))
